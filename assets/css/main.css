@@ -7,10 +7,10 @@ body p {
 }
 .intro {
   background-image: url("../img/bg-hero.png");
-  height: 1000px;
+  height: 970px;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .intro .text-white {
   color: #fff;
