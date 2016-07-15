@@ -1,0 +1,257 @@
+body {
+  font-family: "san francisco" !important;
+  font-weight: 400 !important;
+}
+body p {
+  font-size: 14px;
+}
+.intro {
+  background-image: url("../img/bg-hero.png");
+  height: 1000px;
+  width: 100%;
+}
+.intro .text-white {
+  color: #fff;
+  padding-right: 7%;
+}
+.intro .text-white .title-lg {
+  font-size: 36px;
+  font-weight: 400;
+}
+.intro .text-white .title-md {
+  font-size: 30px;
+}
+.intro .text-white .text-md {
+  font-size: 23px;
+  font-weight: 400;
+}
+.intro .text-white div {
+  width: 58%;
+}
+.intro .text-white ol {
+  padding-bottom: 4%;
+  padding-top: 4%;
+  padding-left: 3%;
+}
+.intro .text-white ol li {
+  line-height: 1.8;
+}
+.intro .text-white .text-sm {
+  font-size: 18px;
+}
+.intro .text-white p.text-sm {
+  margin-bottom: 4%;
+}
+.fw-800 {
+  font-weight: 800 !important;
+}
+.lh-1 {
+  line-height: 1;
+}
+.logo {
+  margin: 4% 0% 2% 0%;
+  width: 11%;
+}
+.overlay-form {
+  padding: 23% 17% 0% 17%;
+  width: 420px;
+  height: 600px;
+  background-color: rgba(0,0,0,0.5);
+  float: right;
+  border-radius: 10px;
+}
+.overlay-form form input {
+  width: 100%;
+  border-radius: 6px;
+  border: 0px;
+  height: 35px;
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+  padding: 0px 0px 0px 12px;
+}
+.overlay-form form button {
+  width: 100%;
+  background-color: #02bbcf;
+  border: 1px solid #02bbcf;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.overlay-form form button:hover {
+  background-color: #158591;
+  border: 1px solid #158591;
+}
+.overlay-form form button:focus {
+  background-color: #02bbcf;
+  border: 1px solid #02bbcf;
+}
+.overlay-form form p {
+  color: #fff;
+  text-align: justify;
+  font-weight: 100;
+  padding-top: 5%;
+  line-height: 1.2;
+  font-size: 15px;
+}
+.overlay-form form .submit {
+  padding-left: 0px !important;
+  background-color: #8db12f;
+  color: #fff;
+  margin-top: 20%;
+}
+.overlay-form form .submit:hover {
+  background-color: #738837;
+}
+.overlay-form form .submit:focus {
+  background-color: #8db12f;
+}
+.descuentos .row {
+  padding: 3% 0% 5% 0%;
+}
+.descuentos h1.title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+}
+.descuentos .col-xs-12.col-md-3 {
+  padding-top: 3%;
+  text-align: center;
+}
+.descuentos .col-xs-12.col-md-3 div {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 800;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.descuentos .col-xs-12.col-md-3 div .text-dsct {
+  position: absolute;
+  top: 7%;
+  left: 10%;
+}
+.descuentos .col-xs-12.col-md-3 div .text-pts {
+  position: absolute;
+  right: 15%;
+  bottom: 55%;
+}
+.descuentos .col-xs-12.col-md-3 div.dsct .text-dsct {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.descuentos .col-xs-12.col-md-3 div.dsct .text-pts {
+  position: absolute;
+  right: 15%;
+  bottom: 33%;
+}
+.descuentos .col-xs-12.col-md-3 h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 8%;
+}
+.descuentos .col-xs-12.col-md-3 .sub-title {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 18px;
+}
+.descuentos .col-xs-12.col-md-3 .text-strike {
+  text-decoration: line-through;
+}
+.descuentos .col-xs-12.col-md-3 .limit-time {
+  color: #f00;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.descuentos .col-xs-12.col-md-3 ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 4% 8% 0% 0%;
+  line-height: 1;
+  font-size: 14px;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2% 0% 2% 0%;
+}
+footer .row.hidden-md.hidden-lg {
+  text-align: center;
+  padding: 5% 12% 5% 12%;
+}
+footer .row.hidden-md.hidden-lg img {
+  height: 115px;
+}
+footer .row {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+}
+footer p {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 0px;
+  line-height: 1.2;
+}
+footer .link {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+footer .logo {
+  width: 30%;
+  float: right;
+}
+.bg-green {
+  background-color: #8db12f;
+  padding: 4% 0% 2.5% 0%;
+}
+.bg-green h1 {
+  font-size: 1.9em;
+  color: #fff;
+  font-weight: 800;
+  margin: 0px;
+}
+.bg-green h2 {
+  font-size: 1.9em;
+  font-weight: 800;
+  margin: 0px;
+}
+.bg-green p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 1%;
+  font-weight: 400;
+  line-height: 1;
+}
+@media (max-width: 320px) {
+  .intro .logo {
+    width: 22%;
+  }
+}
+/*# sourceMappingURL=assets/stylus/main.css.map */
