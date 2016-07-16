@@ -7,7 +7,7 @@ body p {
 }
 .intro {
   background-image: url("../img/bg-hero.png");
-  height: 970px;
+  height: 965px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,6 +53,16 @@ body p {
 .logo {
   margin: 4% 0% 2% 0%;
   width: 11%;
+}
+@media screen and (min-width: 480px) {
+  .logo {
+    width: 50px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .logo {
+    width: 300px;
+  }
 }
 .overlay-form {
   padding: 23% 17% 0% 17%;
@@ -251,9 +261,102 @@ footer .logo {
   font-weight: 400;
   line-height: 1;
 }
-@media (max-width: 320px) {
-  .intro .logo {
-    width: 22%;
-  }
+.intro-xs {
+  background-image: url("../img/bg-hero.png");
+  height: 630px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-xs .text-white {
+  color: #fff;
+}
+.intro-xs .title-lg {
+  font-size: 2.9em;
+  padding-top: 5%;
+  font-weight: 800;
+}
+.intro-xs .col-xs-12.text-white {
+  text-align: center;
+  padding-top: 15%;
+}
+.intro-xs .logo-xs {
+  width: 22%;
+}
+.xs {
+  font-size: 18px;
+}
+.xs .row {
+  padding: 12% 0% 12% 0%;
+}
+.xs p {
+  font-size: 18px;
+}
+.xs .title-md {
+  font-size: 23px;
+}
+.overlay-form-xs {
+  padding: 12% 20% 0% 20%;
+  width: 100%;
+  height: 850px;
+  background-color: rgba(0,0,0,0.5);
+}
+.overlay-form-xs form input {
+  width: 100%;
+  border-radius: 6px;
+  border: 0px;
+  height: 65px;
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+  padding: 0px 0px 0px 12px;
+}
+.overlay-form-xs form button {
+  width: 100%;
+  background-color: #02bbcf;
+  border: 1px solid #02bbcf;
+  height: 65px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #fff;
+}
+.overlay-form-xs form button:hover {
+  background-color: #158591;
+  border: 1px solid #158591;
+}
+.overlay-form-xs form button:focus {
+  background-color: #02bbcf;
+  border: 1px solid #02bbcf;
+}
+.overlay-form-xs form p {
+  color: #fff;
+  text-align: justify;
+  font-weight: 100;
+  padding-top: 5%;
+  line-height: 1.2;
+  font-size: 15px;
+}
+.overlay-form-xs form .submit {
+  padding-left: 0px !important;
+  background-color: #8db12f;
+  color: #fff;
+  margin-top: 8%;
+  height: 65px;
+  font-size: 30px;
+}
+.overlay-form-xs form .submit:hover {
+  background-color: #738837;
+}
+.overlay-form-xs form .submit:focus {
+  background-color: #8db12f;
+}
+.descuentos-xs div.dsct {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 800;
+  width: 100%;
+  height: 295px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=assets/stylus/main.css.map */

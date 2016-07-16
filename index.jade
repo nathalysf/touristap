@@ -7,8 +7,8 @@ html
 		link(rel="stylesheet" href="assets/css/sanfrancisco-font.css")
 		link(rel="stylesheet" href="assets/css/bootstrap.min.css")  
 	body
-		section(class="intro")
-			div(class="container")
+		section(class="intro hidden-xs hidden-sm")
+			div(class="container ")
 				div(class="row")
 					div(class="col-xs-12")
 						img(class="logo" src="assets/img/logo.png")
@@ -43,8 +43,49 @@ html
 									p La foto deberá ser veridica y no tener retoques, ya que pasará por una revisión del equipo TheTourist para determinar su veracidad. Las personas que no cumplan con este requisito, se verán suspendidas de la comunidad The Tourist. 
 								div(class="col-xs-12 col-md-6 col-md-offset-6")
 									input(class="submit" type="submit" name="submit" value="Participar")
+			
+		section(class="intro-xs hidden-md hidden-lg")
+			div(class="container")
+				div(class="row ")
+					div(class="col-xs-12 text-white")
+						img(class="logo-xs" src="assets/img/logo.png")
+						br
+						p(class="title-lg") Uno de estos descuentos puede ser para ti
+		
+		section(class="hidden-md hidden-lg")
+			div(class="container xs")
+				div(class="row")
+					div(class="col-xs-12")
+						span(class="title-md fw-800 lh-1") ¿Cómo conseguirlo? 
+							
+						span(class="title-md fw-800 lh-1") Fácil, 
+						span(class="text-md") sigue los siguientes tres pasos
+						ol(class="text-sm")
+							li Déjanos tus datos, completa el cuadro de al lado con tu información 
+							li Déjanos tus datos, completa el cuadro de al lado con tu información 
+							li Déjanos tus datos, completa el cuadro de al lado con tu información 
+						p(class="text-sm lh-1") *1 En el fondo de la foto se debe apreciar claramente el lugar turistico, las fotos con montaje no serán consideradas.
+						p(class="text-sm lh-1") *2 En el fondo de la foto se debe apreciar claramente el lugar turistico, las fotos con montaje no serán consideradas. 
+						p(class="title-md fw-800") Recuerda que
+						p(class="text-sm lh-1") En el fondo de la foto se debe apreciar claramente el lugar turistico, las fotos con montaje no serán consideradas. 
+						p(class="title-md fw-800") ¿No es suficiente?
+						p(class="text-sm lh-1") En el fondo de la foto se debe apreciar claramente el lugar turistico, las fotos con montaje no serán consideradas. En el fondo de la foto se debe apreciar claramente el lugar turistico, las fotos con montaje no serán consideradas.
+		section(class="overlay-form-xs hidden-md hidden-lg")
+							form(class="row")
+								div(class="col-xs-12") 
+									input(type="text" placeholder="Nombre completo" name="fullname" required)
+								div(class="col-xs-12")
+									input(type="email" placeholder="Correo" name="fullname" required)
+								div(class="col-xs-12")
+									input(type="text" placeholder="DNI o pasaporte" name="document" required)
+								div(class="col-xs-12")
+									button(class="btn btn-primary") Subir un selfie
+								div(class="col-xs-12")
+									p La foto deberá ser veridica y no tener retoques, ya que pasará por una revisión del equipo TheTourist para determinar su veracidad. Las personas que no cumplan con este requisito, se verán suspendidas de la comunidad The Tourist. 
+								div(class="col-xs-12 col-md-6 col-md-offset-6")
+									input(class="submit" type="submit" name="submit" value="Participar")
 
-		section(class="descuentos")
+		section(class="descuentos hidden-xs hidden-sm")
 			div(class="container")
 				div(class="row")
 					div(class="col-xs-12")
@@ -108,5 +149,26 @@ html
 						p(class="limit-time") Quedan: 20 cupos
 
 						p(class="limit-time") Tiempo limitado: 3d 00:00:00
+
+		section(class=" descuentos descuentos-xs hidden-md hidden-lg")
+			div(class="container")
+				div(class="row")
+					div(class="col-xs-12")
+						h1(class="title") ¡Vive la experiencia de los tours Sun & Sand!
+			div(style="background-image:url('assets/img/d-1.jpg');" class="dsct")
+							span(class="text-dsct") -50%
+							span(class="text-pts") 70pts
+				div(class="container")
+					div(class="row")
+						div(class="col-xs-12")
+							h4 Sandboard y Sandbuggles
+
+							p(class="sub-title") Full Adrenalina
+
+							p(class="text-strike") Precio real: s/70.00
+
+							p(class="limit-time") Quedan: 20 cupos
+
+							p(class="limit-time") Tiempo limitado: 3d 00:00:00
 
 		include footer

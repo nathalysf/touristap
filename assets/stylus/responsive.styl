@@ -1,9 +1,102 @@
-smartphonexsWidth = 320px
-smartphoneWidth = 480px
-tabletWidth = 768px
-desktopmdWidth = 1024px
+// smartphonexsWidth = 320px
+// smartphoneWidth = 480px
+// tabletWidth = 768px
+// desktopmdWidth = 1024px
 
-mqSmartphonexs = "(max-width: " + smartphonexsWidth +")"
-mqSmartphone = "(max-width: " + smartphoneWidth "), (min-width: " + smartphonexsWidth + 1px + ")"
-mqTablet = "(max-width: " + tabletWidth + "), (min-width: " + smartphoneWidth + 1px + ") "
-mqDesktopmd = "(max-width: " + desktopWidth + "), (min-width: " + tabletWidth + 1px + ")"
+// mqSmartphonexs = "(max-width: " + smartphonexsWidth +")"
+// mqSmartphone = "(max-width: " + smartphoneWidth ") and (min-width: " + smartphonexsWidth + 1px + ")"
+// mqTablet = "(max-width: " + tabletWidth + "), (min-width: " + smartphoneWidth + 1px + ") "
+// mqDesktopmd = "(max-width: " + desktopWidth + "), (min-width: " + tabletWidth + 1px + ")"
+	.intro-xs
+		background-image url("../img/bg-hero.png")
+		height 630px
+		width 100%
+		background-repeat no-repeat
+		background-size cover
+	
+		.text-white 
+			color white
+		.title-lg
+			font-size 2.9em
+			padding-top 5%
+			font-weight 800
+				
+		.col-xs-12.text-white
+			text-align center
+			padding-top 15%
+		.logo-xs
+			width 22%
+			
+.xs 
+	font-size 18px 
+	.row
+		padding 12% 0% 12% 0%
+	p
+		font-size 18px
+	
+	.title-md
+		font-size 23px
+		
+.overlay-form-xs
+	padding 12% 20% 0% 20%
+	width 100%
+	height 850px
+	background-color rgba(0,0,0,0.5)
+	form 
+		input
+			width 100%
+			border-radius 6px
+			border 0px
+			height 65px
+			margin 10px 0px 10px 0px
+			font-size 18px
+			padding 0px 0px 0px 12px
+		
+		button
+			width 100%
+			background-color #02bbcf
+			border 1px solid #02bbcf
+			height 65px
+			border-radius 6px
+			margin-top 10px
+			font-size 30px
+			color white
+			&:hover
+				background-color #158591
+				border 1px solid #158591
+				
+			&:focus
+				background-color #02bbcf
+				border 1px solid #02bbcf	
+			
+		p 
+			color white
+			text-align justify
+			font-weight 100	
+			padding-top 5%
+			line-height 1.2
+			font-size 15px	
+			
+		.submit
+			padding-left 0px!important
+			background-color #8db12f 	
+			color white
+			margin-top 8%
+			height 65px
+			font-size 30px
+			&:hover 
+				background-color #738837
+				
+			&:focus
+				background-color #8db12f
+	
+
+.descuentos-xs 
+	div.dsct 
+		color white
+		font-size 1.8em
+		font-weight 800
+		width 100%
+		height 295px
+		background-repeat no-repeat
+		background-size cover			

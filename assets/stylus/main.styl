@@ -1,6 +1,4 @@
-//responsive 
 
-@import "responsive.styl"
 
 body 
 	font-family "san francisco"!important
@@ -12,7 +10,7 @@ body
 	height 965px
 	width 100%
 	background-repeat no-repeat
-	background-size contain
+	background-size cover
 	
 	.text-white 
 		color white
@@ -47,8 +45,10 @@ body
 .logo 
 	margin 4% 0% 2% 0%
 	width 11%	
-	
-	
+	@media screen and (min-width: 480px)
+		width 50px 
+	@media screen and (min-width: 720px)
+		width 300px
 .overlay-form
 	padding 23% 17% 0% 17%
 	width 420px
@@ -247,9 +247,9 @@ footer
 		font-weight 400
 		line-height 1
 
+//responsive 
 
 
-@media mqSmartphonexs
-	.intro
-		.logo
-			width 22%
+		
+@import "responsive.styl"
+
