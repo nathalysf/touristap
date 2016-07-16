@@ -255,6 +255,11 @@ footer .logo {
   font-weight: 200;
   line-height: 1;
 }
+.number {
+  font-size: 13px;
+  position: relative;
+  bottom: 3px;
+}
 .intro-xs {
   background-image: url("../img/bg-hero.png");
   height: 630px;
