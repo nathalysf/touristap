@@ -27,9 +27,6 @@ body p {
   font-size: 23px;
   font-weight: 400;
 }
-.intro .text-white div {
-  width: 58%;
-}
 .intro .text-white ol {
   padding-bottom: 4%;
   padding-top: 4%;
@@ -50,13 +47,16 @@ body p {
 .lh-1 {
   line-height: 1;
 }
+.text-shadow {
+  text-shadow: 5px 5px 10px #000;
+}
 .logo {
   margin: 4% 0% 2% 0%;
   width: 11%;
 }
 .overlay-form {
   padding: 23% 17% 0% 17%;
-  width: 420px;
+  width: 115%;
   height: 600px;
   background-color: rgba(0,0,0,0.5);
   float: right;
