@@ -54,16 +54,6 @@ body p {
   margin: 4% 0% 2% 0%;
   width: 11%;
 }
-@media screen and (min-width: 480px) {
-  .logo {
-    width: 50px;
-  }
-}
-@media screen and (min-width: 720px) {
-  .logo {
-    width: 300px;
-  }
-}
 .overlay-form {
   padding: 23% 17% 0% 17%;
   width: 420px;
