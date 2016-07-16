@@ -260,6 +260,9 @@ footer .logo {
   position: relative;
   bottom: 3px;
 }
+.inline {
+  display: inline;
+}
 .intro-xs {
   background-image: url("../img/bg-hero.png");
   height: 630px;
