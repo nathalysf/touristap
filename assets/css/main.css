@@ -224,6 +224,10 @@ footer p {
 footer .link {
   font-size: 1.4em;
   font-weight: 100;
+  color: #fff;
+}
+footer .link:hover {
+  color: #fff;
 }
 footer .logo {
   width: 30%;
@@ -248,7 +252,7 @@ footer .logo {
   color: #fff;
   font-size: 18px;
   margin-top: 1%;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1;
 }
 .intro-xs {
@@ -288,7 +292,7 @@ footer .logo {
 .overlay-form-xs {
   padding: 12% 20% 0% 20%;
   width: 100%;
-  height: 850px;
+  height: 925px;
   background-color: rgba(0,0,0,0.5);
 }
 .overlay-form-xs form input {
@@ -297,7 +301,7 @@ footer .logo {
   border: 0px;
   height: 65px;
   margin: 10px 0px 10px 0px;
-  font-size: 18px;
+  font-size: 25px;
   padding: 0px 0px 0px 12px;
 }
 .overlay-form-xs form button {
@@ -324,7 +328,7 @@ footer .logo {
   font-weight: 100;
   padding-top: 5%;
   line-height: 1.2;
-  font-size: 15px;
+  font-size: 20px;
 }
 .overlay-form-xs form .submit {
   padding-left: 0px !important;
@@ -340,13 +344,63 @@ footer .logo {
 .overlay-form-xs form .submit:focus {
   background-color: #8db12f;
 }
+.descuentos-xs {
+  padding: 6% 0% 6% 0%;
+  text-align: center;
+}
+.descuentos-xs .container {
+  margin-bottom: 4%;
+}
+.descuentos-xs h1.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
 .descuentos-xs div.dsct {
   color: #fff;
-  font-size: 1.8em;
+  font-size: 40px;
   font-weight: 800;
   width: 100%;
   height: 295px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 2%;
+}
+.descuentos-xs div.dsct .text-dsct {
+  position: absolute;
+  left: 2%;
+  margin-top: 1%;
+}
+.descuentos-xs div.dsct .text-pts {
+  position: absolute;
+  right: 2%;
+  margin-top: 22%;
+}
+.descuentos-xs h4 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 4%;
+}
+.descuentos-xs .sub-title {
+  font-weight: 400;
+  line-height: 1;
+  font-size: 18px;
+}
+.descuentos-xs .text-strike {
+  text-decoration: line-through;
+}
+.descuentos-xs .limit-time {
+  color: #f00;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.descuentos-xs ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 4% 0% 0% 0%;
+  line-height: 1;
+  font-size: 18px;
 }
 /*# sourceMappingURL=assets/stylus/main.css.map */
