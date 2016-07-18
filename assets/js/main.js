@@ -1,64 +1,57 @@
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
-
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv-1', deadline);
-
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv-2', deadline);
-
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv-3', deadline);
 
 
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv-movil', deadline);
+ $("#clockdiv")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
 
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv1-movil', deadline);
+ $("#clockdiv-1")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
 
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv2-movil', deadline);
+ $("#clockdiv-2")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
 
-var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv3-movil', deadline);
+ $("#clockdiv-3")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
 
+ $("#clockmovil")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
+
+$("#clockmovil-1")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
+
+$("#clockmovil-2")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
+
+$("#clockmovil-3")
+   .countdown("2016/07/21", function(event) {
+     $(this).text(
+       event.strftime('%D d %H:%M:%S')
+     );
+   });
