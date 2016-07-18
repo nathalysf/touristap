@@ -37,28 +37,28 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv-1', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv-2', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv-3', deadline);
 
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv-movil', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv1-movil', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv2-movil', deadline);
 
-var deadline = new Date(Date.parse(new Date()) + 3 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse(new Date()) + 4 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv3-movil', deadline);
 
