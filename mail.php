@@ -58,5 +58,5 @@
 	$params = '-f ' . $emailfrom;
 	$test = mail($emailto, $subject, $messagebody, $headers, $params);
 	// $test should be TRUE if the mail function is called correctly
-	header("Location: index-2.html");
+	header("Location: bienvenido.html");
 ?>
