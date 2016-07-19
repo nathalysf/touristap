@@ -169,13 +169,6 @@ body p {
   line-height: 1;
   margin-bottom: 4px;
 }
-.descuentos .col-xs-12.col-md-3 ul {
-  text-align: left;
-  list-style-type: none;
-  padding: 4% 8% 0% 0%;
-  line-height: 1;
-  font-size: 14px;
-}
 footer {
   background-color: #000;
   color: #fff;
@@ -230,7 +223,7 @@ footer .link:hover {
   color: #fff;
 }
 footer .logo {
-  width: 30%;
+  width: 45%;
   float: right;
 }
 .bg-green {
