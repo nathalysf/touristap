@@ -1,4 +1,4 @@
-
+//countdown
 
  $("#clockdiv")
    .countdown("2016/07/21", function(event) {
@@ -55,3 +55,16 @@ $("#clockmovil-3")
        event.strftime('%D d %H:%M:%S')
      );
    });
+
+
+//upload selfie 
+
+function selfie(numeroInput) {
+    $("#fileToUpload"+numeroInput).change(function(){
+        $("#file"+numeroInput).val($("#fileToUpload"+numeroInput).val()); 
+    });
+    $("#fileToUpload"+numeroInput).click(function(){
+          $(".input-imagen").show();
+    });
+}
+

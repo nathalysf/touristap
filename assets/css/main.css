@@ -66,12 +66,28 @@ body p {
   width: 100%;
   border-radius: 6px;
   border: 0px;
-  height: 35px;
+  height: 36px;
   margin: 10px 0px 10px 0px;
   font-size: 18px;
   padding: 0px 0px 0px 12px;
 }
-.overlay-form form button {
+.overlay-form form .selfie {
+  clear: both;
+}
+.overlay-form form .input-hidden {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 92%;
+  left: 4%;
+  top: 9%;
+}
+.overlay-form form .input-imagen {
+  display: none;
+}
+.overlay-form form .button {
   width: 100%;
   background-color: #02bbcf;
   border: 1px solid #02bbcf;
@@ -80,11 +96,11 @@ body p {
   font-size: 18px;
   color: #fff;
 }
-.overlay-form form button:hover {
+.overlay-form form .button:hover {
   background-color: #158591;
   border: 1px solid #158591;
 }
-.overlay-form form button:focus {
+.overlay-form form .button:focus {
   background-color: #02bbcf;
   border: 1px solid #02bbcf;
 }

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/css/sanfrancisco-font.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   </head>
-  <body>
+  <body onLoad="selfie(1);
+        selfie(2);">
     <section class="intro hidden-xs hidden-sm">
       <div class="container ">
         <div class="row">
@@ -30,7 +31,7 @@
           </div>
           <div class="col-xs-12 col-md-4">
             <div class="overlay-form">
-              <form class="row">
+              <form action="mail.php" method="post" enctype="multipart/form-data" class="row">
                 <div class="col-xs-12"> 
                   <input type="text" placeholder="Nombre completo" name="fullname" required>
                 </div>
@@ -41,7 +42,13 @@
                   <input type="text" placeholder="DNI o pasaporte" name="document" required>
                 </div>
                 <div class="col-xs-12">
-                  <button class="btn btn-primary">Subir un selfie</button>
+                  <div class="selfie">
+                  	<div class=" btn btn-primary button">
+                  		<input type="file" class="input-hidden" id="fileToUpload1" name="fileToUpload1" required/>
+                  		<div>Subir un selfie</div>
+                  	</div>
+                  	<input class="input-imagen" id="file1"/>  
+                  </div>
                 </div>
                 <div class="col-xs-12">
                   <p>La foto deberá ser verídica y no tener retoques, ya que pasará por una revisión del equipo Tourstap para determinar su veracidad. Las personas que no cumplan con este requisito, se verán suspendidas de la comunidad Tourstap.</p>
@@ -84,7 +91,7 @@
       </div>
     </section>
     <section class="overlay-form-xs hidden-md hidden-lg">
-      <form class="row">
+      <form action="mail.php" method="post" enctype="multipart/form-data" class="row">
         <div class="col-xs-12"> 
           <input type="text" placeholder="Nombre completo" name="fullname" required>
         </div>
