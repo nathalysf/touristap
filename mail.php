@@ -1,24 +1,5 @@
 <?php
 
-	//Bluehost Example
-	$emailto = 'nathalysalgado.f@gmail.com';
-	$toname = 'Tourstap Susbcription';
-	$emailfrom = $_POST["email"];
-	$fromname = 'Tourstap Susbcription';
-	$subject = 'Subscriber from Landing Page';
-	$messagebody = 'Hola este es mi correo ' . $emailfrom . ', solicito que me puedan enviar la información.';
-	$headers = 
-		'Return-Path: ' . $emailfrom . "\r\n" . 
-		'From: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" . 
-		'X-Priority: 3' . "\r\n" . 
-		'X-Mailer: PHP ' . phpversion() .  "\r\n" . 
-		'Reply-To: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" .
-		'MIME-Version: 1.0' . "\r\n" . 
-		'Content-Transfer-Encoding: 8bit' . "\r\n" . 
-		'Content-Type: text/plain; charset=UTF-8' . "\r\n";
-	$params = '-f ' . $emailfrom;
-	$test = mail($emailto, $subject, $messagebody, $headers, $params);
-	// $test should be TRUE if the mail function is called correctly
 	$target_dir = "uploads/";
 	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
@@ -34,11 +15,7 @@
 	        $uploadOk = 0;
 	    }
 	}
-	// Check if file already exists
-	// if (file_exists($target_file)) {
-	//     echo "Sorry, file already exists.";
-	//     $uploadOk = 0;
-	// }
+	
 	// Check file size
 	if ($_FILES["fileToUpload"]["size"] > 500000) {
 	    echo "Sorry, your file is too large.";
@@ -61,5 +38,25 @@
 	        echo "Sorry, there was an error uploading your file.";
 	    }
 	}
-	header("Location: index.html");
+
+	//Bluehost Example
+	$emailto = 'subscriptions@tourstap.com';
+	$toname = 'Tourstap Susbcription';
+	$emailfrom = $_POST["email"];
+	$fromname = 'Tourstap Susbcription';
+	$subject = 'Subscriber from Landing Page';
+	$messagebody = 'Hola este es mi correo ' . $emailfrom . ', solicito que me puedan enviar la información.';
+	$headers = 
+		'Return-Path: ' . $emailfrom . "\r\n" . 
+		'From: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" . 
+		'X-Priority: 3' . "\r\n" . 
+		'X-Mailer: PHP ' . phpversion() .  "\r\n" . 
+		'Reply-To: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" .
+		'MIME-Version: 1.0' . "\r\n" . 
+		'Content-Transfer-Encoding: 8bit' . "\r\n" . 
+		'Content-Type: text/plain; charset=UTF-8' . "\r\n";
+	$params = '-f ' . $emailfrom;
+	$test = mail($emailto, $subject, $messagebody, $headers, $params);
+	// $test should be TRUE if the mail function is called correctly
+	header("Location: index-2.html");
 ?>

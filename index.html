@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="assets/css/sanfrancisco-font.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   </head>
-  <body onLoad="selfie(1);
-        selfie(2);">
+  <body onLoad="selfie(1); selfie(2); clock(1); clock(2); clock(3); clock(4);">
     <section class="intro hidden-xs hidden-sm">
       <div class="container ">
         <div class="row">
@@ -33,13 +32,13 @@
             <div class="overlay-form">
               <form action="mail.php" method="post" enctype="multipart/form-data" class="row">
                 <div class="col-xs-12"> 
-                  <input type="text" placeholder="Nombre completo" name="fullname" required>
+                  <input type="text" placeholder="Nombre completo" name="fullname" pattern="\S[A-Za-z ]{5,20}" required>
                 </div>
                 <div class="col-xs-12">
                   <input type="email" placeholder="Correo" name="fullname" required>
                 </div>
                 <div class="col-xs-12">
-                  <input type="text" placeholder="DNI o pasaporte" name="document" required>
+                  <input type="text" placeholder="DNI o pasaporte" name="document" pattern="\S{8,12}" required>
                 </div>
                 <div class="col-xs-12">
                   <div class="selfie">
@@ -54,7 +53,7 @@
                   <p>La foto deberá ser verídica y no tener retoques, ya que pasará por una revisión del equipo Tourstap para determinar su veracidad. Las personas que no cumplan con este requisito, se verán suspendidas de la comunidad Tourstap.</p>
                 </div>
                 <div class="col-xs-12 col-md-6 col-md-offset-6">
-                  <input type="submit" name="submit" value="Participar" class="submit">
+                  <input type="submit" id="submit1" name="submit" value="Participar" class="submit">
                 </div>
               </form>
             </div>
@@ -93,22 +92,28 @@
     <section class="overlay-form-xs hidden-md hidden-lg">
       <form action="mail.php" method="post" enctype="multipart/form-data" class="row">
         <div class="col-xs-12"> 
-          <input type="text" placeholder="Nombre completo" name="fullname" required>
-        </div>
-        <div class="col-xs-12">
-          <input type="email" placeholder="Correo" name="fullname" required>
-        </div>
-        <div class="col-xs-12">
-          <input type="text" placeholder="DNI o pasaporte" name="document" required>
-        </div>
-        <div class="col-xs-12">
-          <button class="btn btn-primary">Subir un selfie</button>
-        </div>
+                  <input type="text" placeholder="Nombre completo" name="fullname" pattern="\S[A-Za-z ]{6,20}" title="Se necesita Nombre Completo" required>
+                </div>
+                <div class="col-xs-12">
+                  <input type="email" placeholder="Correo" name="fullname" required>
+                </div>
+                <div class="col-xs-12">
+                  <input type="text" placeholder="DNI o pasaporte" title="Se necesita un documento tipo DNI o Pasaporte válido" name="document" pattern="\S[0-9]{8,12}" required>
+                </div>
+                <div class="col-xs-12">
+                  <div class="selfie">
+                  	<div class=" btn btn-primary button">
+                  		<input type="file" class="input-hidden" id="fileToUpload2" name="fileToUpload2" required/>
+                  		<div>Subir un selfie</div>
+                  	</div>
+                  	<input class="input-imagen" id="file2"/>  
+                  </div>
+                </div>
         <div class="col-xs-12">
           <p>La foto deberá ser verídica y no tener retoques, ya que pasará por una revisión del equipo Tourstap para determinar su veracidad. Las personas que no cumplan con este requisito, se verán suspendidas de la comunidad Tourstap. </p>
         </div>
         <div class="col-xs-12 col-md-6 col-md-offset-6">
-          <input type="submit" name="submit" value="Participar" class="submit">
+          <input type="submit" id="submit2" name="submit" value="Participar" class="submit">
         </div>
       </form>
     </section>
@@ -124,7 +129,7 @@
             <p class="sub-title">Full Adrenalina</p>
             <p class="text-strike">Precio real: s/70.00</p>
             <p class="limit-time">Quedan: 20 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv1">
             </span></p>
             
           </div>
@@ -135,7 +140,7 @@
             <p class="text-strike">Precio real: s/60.00</p>
             <p class="limit-time">Quedan: 25 cupos</p>
             <p class="limit-time inline">Tiempo limitado:
-            <span class="limit-time inline" id="clockdiv-1">
+            <span class="limit-time inline" id="clockdiv2">
             	
             </span>
             </p>
@@ -147,7 +152,7 @@
             <p class="sub-title">Paraiso Marítimo</p>
             <p class="text-strike">Precio real: s/50.00</p>
             <p class="limit-time">Quedan: 30 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv-2">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv3">
             	
             </span></p>
             
@@ -158,7 +163,7 @@
             <p class="sub-title">Ciudad del eterno sol</p>
             <p class="text-strike">Precio real: s/40.00</p>
             <p class="limit-time">Quedan: 35 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv-3">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockdiv4">
             </span></p>
             
           </div>
@@ -181,7 +186,7 @@
             <p class="sub-title">Full Adrenalina</p>
             <p class="text-strike">Precio real: s/70.00</p>
             <p class="limit-time">Quedan: 20 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil1">
             	
             </span></p>
             
@@ -196,7 +201,7 @@
             <p class="sub-title">Misterio y aventura</p>
             <p class="text-strike">Precio real: s/60.00</p>
             <p class="limit-time">Quedan: 25 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil-1">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil2">
             	
             </span></p>
             
@@ -211,7 +216,7 @@
             <p class="sub-title">Paraiso Marítimo</p>
             <p class="text-strike">Precio real: s/50.00</p>
             <p class="limit-time">Quedan: 30 cupos</p>
-            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil-2">
+            <p class="limit-time inline">Tiempo limitado:<span class="limit-time inline" id="clockmovil3">
             	
             </span></p>
             
@@ -227,7 +232,7 @@
             <p class="text-strike">Precio real: s/40.00</p>
             <p class="limit-time">Quedan: 35 cupos</p>
             <p class="limit-time inline">Tiempo limitado:</p>
-            <span class="limit-time inline" id="clockmovil-3">
+            <span class="limit-time inline" id="clockmovil4">
             	
             </span>
           </div>
