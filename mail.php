@@ -1,7 +1,7 @@
 <?php
 
 	//Bluehost Example
-	$emailto = 'subscriptions@tourstap.com';
+	$emailto = 'nathalysalgado.f@gmail.com';
 	$toname = 'Tourstap Susbcription';
 	$emailfrom = $_POST["email"];
 	$fromname = 'Tourstap Susbcription';
