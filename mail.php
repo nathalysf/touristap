@@ -1,9 +1,14 @@
 <?php
-
+	$namefrom = $_POST["fullname"];
+	$emailfrom = $_POST["email"];
+	$documentfrom = $_POST["document"];
 	$target_dir = "uploads/";
 	$target_file = $target_dir . basename($_FILES["fileToUpload1"]["name"]);
-	$uploadOk = 1;
 	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+	$fileName = $documentfrom.'-'.date('m-d-Y_hia').'.'.$imageFileType;
+	$fileLocation =  'http://www.tourstap.com/uploads/'.$fileName;
+	$target_file = $target_dir .$fileName;
+	$uploadOk = 1;
 	// Check if image file is a actual image or fake image
 	if(isset($_POST["submit"])) {
 	    $check = getimagesize($_FILES["fileToUpload1"]["tmp_name"]);
@@ -34,29 +39,30 @@
 	} else {
 	    if (move_uploaded_file($_FILES["fileToUpload1"]["tmp_name"], $target_file)) {
 	        echo "The file ". basename( $_FILES["fileToUpload1"]["name"]). " has been uploaded.";
+	        //Bluehost Example
+			$emailto = 'subscriptions@tourstap.com';
+			$toname = 'Tourstap Susbcription';
+			
+			$fromname = 'Tourstap Susbcription';
+			$subject = 'Subscriber from Landing Page';
+			$messagebody = 'Hola mi nombre es '. $namefrom .', mi documento es ' . $documentfrom . ' y mi correo es ' . $emailfrom . ', solicito que me puedan enviar la información. Mi selfie se encuentra en '. $fileLocation;
+			$headers = 
+				'Return-Path: ' . $emailfrom . "\r\n" . 
+				'From: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" . 
+				'X-Priority: 3' . "\r\n" . 
+				'X-Mailer: PHP ' . phpversion() .  "\r\n" . 
+				'Reply-To: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" .
+				'MIME-Version: 1.0' . "\r\n" . 
+				'Content-Transfer-Encoding: 8bit' . "\r\n" . 
+				'Content-Type: text/plain; charset=UTF-8' . "\r\n";
+			$params = '-f ' . $emailfrom;
+			$test = mail($emailto, $subject, $messagebody, $headers, $params);
+			// $test should be TRUE if the mail function is called correctly
+			header("Location: bienvenido.html");
 	    } else {
 	        echo "Sorry, there was an error uploading your file.";
 	    }
 	}
 
-	//Bluehost Example
-	$emailto = 'subscriptions@tourstap.com';
-	$toname = 'Tourstap Susbcription';
-	$emailfrom = $_POST["email"];
-	$fromname = 'Tourstap Susbcription';
-	$subject = 'Subscriber from Landing Page';
-	$messagebody = 'Hola este es mi correo ' . $emailfrom . ', solicito que me puedan enviar la información.';
-	$headers = 
-		'Return-Path: ' . $emailfrom . "\r\n" . 
-		'From: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" . 
-		'X-Priority: 3' . "\r\n" . 
-		'X-Mailer: PHP ' . phpversion() .  "\r\n" . 
-		'Reply-To: ' . $fromname . ' <' . $emailfrom . '>' . "\r\n" .
-		'MIME-Version: 1.0' . "\r\n" . 
-		'Content-Transfer-Encoding: 8bit' . "\r\n" . 
-		'Content-Type: text/plain; charset=UTF-8' . "\r\n";
-	$params = '-f ' . $emailfrom;
-	$test = mail($emailto, $subject, $messagebody, $headers, $params);
-	// $test should be TRUE if the mail function is called correctly
-	header("Location: bienvenido.html");
+
 ?>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="/images/mifavicon.png" />
     <title>Tourstap</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -35,7 +36,7 @@
                   <input type="text" placeholder="Nombre completo" name="fullname" pattern="\S[A-Za-z ]{5,20}" required>
                 </div>
                 <div class="col-xs-12">
-                  <input type="email" placeholder="Correo" name="fullname" required>
+                  <input type="email" placeholder="Correo" name="email" required>
                 </div>
                 <div class="col-xs-12">
                   <input type="text" placeholder="DNI o pasaporte" name="document" pattern="\S{8,12}" required>
@@ -43,10 +44,10 @@
                 <div class="col-xs-12">
                   <div class="selfie">
                   	<div class=" btn btn-primary button">
-                  		<input type="file" class="input-hidden" id="fileToUpload1" name="fileToUpload1" required/>
+                  		<input type="file" class="input-hidden" id="fileToUpload2" name="fileToUpload2" required/>
                   		<div>Subir un selfie</div>
                   	</div>
-                  	<input class="input-imagen" id="file1"/>  
+                  	<input class="input-imagen" id="file2"/>  
                   </div>
                 </div>
                 <div class="col-xs-12">
@@ -90,12 +91,12 @@
       </div>
     </section>
     <section class="overlay-form-xs hidden-md hidden-lg">
-      <form action="mail.php" method="post" enctype="multipart/form-data" class="row">
+      <form action="mail-movil.php" method="post" enctype="multipart/form-data" class="row">
         <div class="col-xs-12"> 
                   <input type="text" placeholder="Nombre completo" name="fullname" pattern="\S[A-Za-z ]{6,20}" title="Se necesita Nombre Completo" required>
                 </div>
                 <div class="col-xs-12">
-                  <input type="email" placeholder="Correo" name="fullname" required>
+                  <input type="email" placeholder="Correo" name="email" required>
                 </div>
                 <div class="col-xs-12">
                   <input type="text" placeholder="DNI o pasaporte" title="Se necesita un documento tipo DNI o Pasaporte válido" name="document" pattern="\S[0-9]{8,12}" required>
